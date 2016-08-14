@@ -1,0 +1,404 @@
+		*{
+			margin:0px;
+			padding:0px;	
+		}
+		
+		a{
+			text-decoration:none;
+		}
+		#bg{
+			width:100%;
+			height:1000px;	
+			background:#EDEDED;	
+		}
+		
+		.clear{
+				width:0;
+				height:0;
+				clear:both;
+			}
+		/*-----------------------------------------------------*/
+		#biaotou{
+		
+			width:960px;
+			height:40px;
+			margin:0px auto;
+			/*background:red;*/	
+			background:white;				
+		}
+		
+		#adcity{
+			margin-left:2px;
+			width:120px;
+			height:40px;
+			line-height:40px;
+			padding-left:2px;
+			text-align:left;
+			/*background:blue;*/
+			float:left;
+		}
+		
+		#headlist{
+			width:auto;
+			height:40px;
+			line-height:40px;
+			/*background:yellow;*/
+			font-size:15px;
+			
+			float:right;
+		}
+		
+		#headlist li {
+			float:right;
+		}
+		
+		li {
+			list-style:none;
+			margin:2px;
+		}
+		
+		/*-----------------------------------------------------*/	
+		#ucnav{
+			width:100%;
+			height:80px;
+			margin:0 auto;
+			background:#E45050;		
+		}	
+		
+		#ucnav1{
+			width:960px;
+			height:80px;
+			margin:0 auto;
+			background:#E45050;	
+		}
+
+		#ucnav2{	
+			width:170px;
+			height:80px;
+			float:left;
+			/*background:blue;*/
+		}
+		
+		#ucnav3{
+			margin-left:2px;
+			width:100px;
+			height:73px;
+			float:left;
+			/*background:yellow;*/
+		}
+		
+		#wodejd{
+			width:100px;
+			height:30px;
+			text-align:center;
+			font-size:23px;
+			color:white;
+			float:right;
+			line-height:40px;	
+		}
+		
+		#fanhuijd{
+			margin-top:10px;
+			width:100px;
+			height:20px;
+			font-size:14px;
+			border:1px solid ;
+			border-radius:8px;
+			text-align:center;
+			color:white;
+			float:right;
+		}
+		
+		#shouye{
+			width:90px;
+			height:80px;
+			/*background:yellow;*/
+			text-align:center;
+			float:left;
+			color:white;
+			line-height:80px;	
+		}
+		#zhanghushezhi{
+			width:90px;
+			height:80px;
+			text-align:center;
+			float:left;
+			color:white;
+			line-height:80px;	
+		}
+		
+		
+		#shequ{
+			width:90px;
+			height:80px;
+			text-align:center;
+			float:left;
+			color:white;
+			line-height:80px;	
+		}
+		
+		#xiaoxi{
+			width:90px;
+			height:80px;
+			/*background:yellow;*/
+			text-align:center;
+			float:left;
+			color:white;
+			line-height:80px;	
+		}
+		
+		#wodegouwuche{
+			width:135px;
+			height:40px;
+			margin-top:20px;
+			background:white;
+			color:black;
+			text-align:center;
+			line-height:40px;	
+			float:right;
+		}
+		
+		#sousuo{
+			margin-right:5px;
+			width:180px;
+			height:40px;
+			margin-top:20px;
+			background:white;
+			color:black;
+			text-align:center;
+			line-height:40px;	
+			float:right;
+		}
+		
+	/*-----------------------------------------------------*/		
+		#ucmain{
+			width:960px;
+			height:auto;
+			margin:0 auto;
+			
+			
+		}
+		
+		#shezhi{
+				margin-top:20px;
+				width:105px;
+				height:auto;
+				/*background:yellow;*/
+				font-size:14px;
+				float:left;
+		}
+		
+		.shezhicell{
+			width:105px;
+			height:24px;
+			}
+		#shezhi a{
+			text-decoration:none;	
+			color:#777777;
+		}
+	/*-----------------------------------------------------*/		
+		#xinxi{
+			width:840px;	
+			height:auto;
+			background:white;
+			overflow:hidden;
+		}
+		
+		#mibaowenti{
+			width:840px;	
+			height:500px;
+			background:white;
+			overflow:hidden;
+			font-size:20px;
+		}
+		
+		#gerenxinxi{
+				margin-top:20px;
+				width:500px;
+				height:auto;
+				background:white;
+				float:left;	
+				overflow:hidden;
+			
+		}
+		
+	
+		
+		#xinxibiaotou{
+			width:520;
+			height:50px;
+			
+		}
+		
+		#jibenxinxi{
+			margin-left:35px;
+			width:80px;
+			height:50px;
+			line-height:50px;
+			text-align:center;
+			float:left;			
+		}
+		
+		#touxiangxinxi{
+			margin-left:5px;
+			width:80px;
+			height:50px;
+			line-height:50px;
+			text-align:center;
+			float:left;			
+		}
+		
+		#grxxmore{
+			margin-left:5px;
+			width:100px;
+			height:50px;
+			line-height:50px;
+			text-align:center;
+			float:left;		
+		}
+		
+		#nicheng{
+			margin-left:80px;
+			width:250px;
+			height:50px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		
+		#textbox{
+			border:1px solid;
+			float:right;
+			height:30px;
+			width:200px;
+			margin-top:2.5px;	
+		}
+		
+		#oldpwd{
+			margin-left:60px;
+			width:500px;
+			height:50px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		
+		#newpwd{
+			margin-left:60px;
+			width:500px;
+			height:50px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		
+		#checkpwd{
+			margin-left:30px;
+			width:500px;
+			height:50px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		#xingbie{
+			margin-left:80px;
+			width:250px;
+			height:50px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		
+		#touxiang{
+			margin-left:80px;
+			width:250px;
+			height:200px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		
+		#yxupdate{
+			margin-left:80px;
+			width:500px;
+			height:50px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		#shengri{
+			margin-left:80px;
+			width:500px;
+			height:50px;	
+			font-size:14px;
+			line-height:40px;
+		}
+		
+		#xingqu{
+			margin-left:60px;
+			width:500px;
+			height:40px;	
+			font-size:10px;
+			line-height:40px;
+			
+		}
+		
+		
+		#xingquneirong{
+			width:410px;
+			height:auto;
+			overflow:hidden;
+			margin-left:100px;
+			font-size:14px;
+		}
+		
+		#xingquneirong a{
+			text-decoration:none;
+			color:#777777;
+		
+			
+		}
+		
+	
+		.like{
+			border:1px solid #777777;
+			width:auto;
+			height:30px;
+			float:left;
+			margin:3px 6px;
+			line-height:30px;
+			text-align:center;
+			padding:0 2px;
+			
+		}
+		
+
+		
+		#youxiang{
+			width:auto;
+			height:40px;
+			line-height:40px;
+			text-align:40px;
+			margin-top:10px;
+			margin-bottom:10px;
+			margin-left:70px;
+			margin-right:10px;
+			font-size:10px;
+			float:left;
+			
+		}
+		
+		#xiazai{
+			float:left;
+			margin-top:16px;
+			margin-left:10px;
+			
+		}
+		
+		
+		#yonghudengjixinxi{
+			float:right;
+			margin-top:60px;
+			margin-right:50px;
+		}
+		
+		#xiugaishouji{
+			float:right;
+			margin-top:10px;
+			margin-right:50px;
+			font-size:10px;
+			
+		}
