@@ -94,7 +94,7 @@
 	</div><hr>
 	
 	<!-- 尾部 -->
-	<!-- <footer class="footer ">
+	<!-- 于爽之前的<footer class="footer ">
 	  <div class="container">
 	    <div class="row footer-top">
 	      <div class="col-sm-6 col-lg-6">
@@ -146,83 +146,67 @@
 	    </div>
 	  </div>
 	</footer> -->
+	<!-- old footer尾部 -->
+	<!-- new footer尾部 -->
 	<div class="container" style="width:90%">
 		<div id="footer" class="row" style="center">
-
-		   <div id="rcorners3" class="col-sm-6 col-md-3">
-		   		
-		      <div class="row clearfix">
+		   	<div id="rcorners3" class="col-sm-6 col-md-3">		
+		        <div class="row clearfix">
 		      	@foreach($links as $k=>$v)
-		         <div class="col-md-12 column">{{!!$v->name!!}}
-		         	<a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		        <div class="col-md-12 column">
+		         	<a href="{{$v->url}}" class="thumbnail">
+		               <!-- <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">网站图片linkpic -->
+		                <img src="{{$v->pic}}" alt="">
 		            </a>
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div> 
-		         </div>
-		          @endforeach
-		         <div class="col-md-12 column">
-		         	 <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            <div width="60"><a href="{{$v->url}}" target="_blank">{{$v->name}}</a></div> 
+		        </div>
+		        @endforeach
+		        </div>
+		   	</div>
+		   	<div id="rcorners3" class="col-sm-6 col-md-3">	
+		        <div class="row clearfix">
+		      	@foreach($links as $k=>$v)
+		        	<div class="col-md-12 column">
+		         	<a href="{{$v->url}}" class="thumbnail">
+		               <!-- <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">网站图片linkpic -->
+		               <img src="{{$v->pic}}" alt="">
 		            </a>
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
-		         </div>
-		      </div>
-		     
-		      
-		   </div>
-		   <div id="rcorners3" class="col-sm-6 col-md-3">
-		      <div class="row clearfix">
-		         <div class="col-md-12 column">
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
-		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            <div width="60"><a href="{{$v->url}}" target="">{{$v->name}}</a></div> 
+		        	</div>
+		          @endforeach   
+		    	</div>
+		   	</div>
+		   	<div id="rcorners3" class="col-sm-6 col-md-3">	
+		        <div class="row clearfix">
+		      	@foreach($links as $k=>$v)
+		        	<div class="col-md-12 column">
+		         	<a href="{{$v->url}}" class="thumbnail">
+		               <!-- <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">网站图片linkpic -->
+		                <img src="{{$v->pic}}" alt="">
 		            </a>
-		         </div>
-		         <div class="col-md-12 column">
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
-		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
-		            </a>
-		         </div>
-		      </div>
-		      
-		   </div>
-		   <div id="rcorners3" class="col-sm-6 col-md-3">
-		      <div class="row clearfix">
-		         <div class="col-md-12 column">
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
-		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
-		            </a>
-		         </div>
-		         <div class="col-md-12 column">
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
-		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
-		            </a>
-		         </div>
-		      </div>
-		      
-		   </div>
-		   <div id="rcorners3" class="col-sm-6 col-md-3">
-		      <div class="row clearfix">
-		         <div class="col-md-12 column">
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
-		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
-		            </a>
-		         </div>
-		         <div class="col-md-12 column">
-		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
-		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
-		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
-		            </a>
-		         </div>
-		      </div>
-	      
-	   </div>
+		            <div width="60"><a href="{{$v->url}}" target="_blank">{{$v->name}}</a></div> 
+		        	</div>
+		          @endforeach   
+		    	</div>
+		   	</div>
+		   	<div id="rcorners3" class="col-sm-6 col-md-3">
+		   		
+		      	<div class="row clearfix">
+		      	@foreach($links as $k=>$v)
+			        <div class="col-md-12 column">
+			         	<a href="{{$v->url}}" class="thumbnail">
+			               <!-- <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">网站图片linkpic -->
+			               <img src="{{$v->pic}}" alt="">
+			            </a>
+			            <div width="60"><a href="{{$v->url}}" target="">{{$v->name}}</a></div> 
+			        </div>
+		        @endforeach
+		         
+		      	</div>
+		   	</div>
+		</div>	   
 	</div>
-	<!-- 尾部 -->
+	<!-- new footer尾部end -->
 
 	<script src="/admins/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/admins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

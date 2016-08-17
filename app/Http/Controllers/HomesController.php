@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Links;
 use Illuminate\Http\Request;
 use DB;
 use App\Http\Requests;
@@ -16,10 +16,13 @@ class HomesController extends Controller
     {
     	//查询商品分类
     	$res = DB::table('cate')->get();
+      //$links = DB::table('links')->get();
+      $links = Links::orderBy('order','asc')->skip(0)->take(2)->get();
     	// dd($res);
     	$cates = self::cates($res,0);
+      
     	// dd($cates);
-        return view('welcome',['cates'=>$cates]);
+        return view('welcome',['cates'=>$cates,'links'=>$links]);
     }
 
   	
@@ -47,7 +50,8 @@ class HomesController extends Controller
     /*
     * 前台友情链接列表
     */
-    public function getHomeindex()
+    
+    /*public function getHomeindex(Request $request)
     {
       //$keywords与orderBy冲突;
       /************************
@@ -79,12 +83,15 @@ class HomesController extends Controller
      */
       //$links = Links::orderBy('order','asc')->get();
       //dd($links);
+
+      /*
       $links = DB::table('links')->get();
       //$data = Links::orderBy('order','asc')->paginate($num);
      //return view('admin.links.index',compact('data','request'));
        //return view('admin.links.index',['data'=>$data,'request'=>$request]);
        return view('layout.homeindex',['links'=>$links,'request'=>$request]);
     }
+    */
 
 
 
