@@ -40,10 +40,17 @@
 		    	<li><a href="/login/login">登录</a></li>
 		    	<li><a href="/login/register">注册</a></li>
 		    	@endif
+
 		    	@if(session('id'))
 		    	<li><a href="/members">个人中心</a></li>
 		    	<li><a href=""><span style="color:#d9534f" class="glyphicon glyphicon-shopping-cart" id="span3">我的购物车</span></a></li>
-		    	<li><a>{{session('username')}}</a></li>
+			    	@if(session('username'))
+			    		<li><a>{{session('username')}}</a></li>
+			    	@endif
+			    	@if(empty(session('username')))
+			    		<li><a>{{session('email')}}</a></li>
+			    	@endif
+
 		    	<li><a href="/login/out">退出</a></li>
 		    	@endif
 		    </ul>
@@ -208,6 +215,13 @@
 	</div>
 	<!-- new footer尾部end -->
 
+	@if(empty(session('id')))
+	<script src="http://www.sobot.com/chat/pc/pc.min.js?sysNum=0aa0331865b641d0b12b2ccff20939fa" id="zhichiload" ></script>
+	@endif
+
+	@if(session('id'))
+	<script src="http://www.sobot.com/chat/pc/pc.min.js?sysNum=0aa0331865b641d0b12b2ccff20939fa&partnerId={{session('id')}}&uname={{session('username')}}&tel=18566668888&email={{session('email')}}" id="zhichiload" ></script>
+	@endif
 	<script src="/admins/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/admins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/admins/bower_components/metisMenu/dist/metisMenu.min.js"></script>
@@ -227,6 +241,6 @@
 	</script>
    
 
-	
+
 </body>
 </html>

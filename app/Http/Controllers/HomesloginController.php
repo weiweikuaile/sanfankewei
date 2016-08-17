@@ -128,11 +128,12 @@ class HomesloginController extends Controller
 			->where('email',$request->input('email'))
 			->first();
 			//检查用户是否存在
+		//dd($user);
 		if(!empty($user)){
 			//检测密码是否一致
 			if(Hash::check($request->input('password'),$user->password)){
 				//登录成功
-				session(['id'=>$user->id,'username'=>$user->username]);
+				session(['id'=>$user->id,'username'=>$user->username,'email'=>$user->email]);
 				//跳转页面
 				return redirect('/');
 			}else{
