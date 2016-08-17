@@ -32,6 +32,8 @@ Route::group(['middleware'=>'adminlogin'],function(){
 	Route::controller('/admin/comments','CommentsController');
 	//后台购物车管理
 	Route::controller('/admin/carts','CartsController');
+	//后台友情链接管理
+	Route::controller('/admin/links','LinksController');
 });
 
 //前台列表页

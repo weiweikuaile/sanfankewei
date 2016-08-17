@@ -5,7 +5,7 @@
 	<title>首页</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="/homes/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/homes/css/bootstrap.min.css">   
 	<link rel="stylesheet" href="/homes/css/bootstrap-theme.min.css">
 	<script src="/homes/js/jquery-1.11.3.min.js"></script>
 	<script src="/homes/js/bootstrap.min.js"></script>
@@ -16,6 +16,17 @@
 		.fenlei2{position: absolute;display:none;z-index:1;background:white;background:rgb(250,59,120);font-size:20px;}
 		li{overflow:hidden;}
 		.fenlei2 a:hover{background:red;color:black;height:30px;}
+
+		#rcorners3 {
+		    border-radius: 25px;
+		    background: url(/images/paper.gif);
+		    background-position: left top;
+		    background-repeat: repeat;
+		    margin:0 50px;
+		    padding: 15px; 
+		    width: 200px;
+		    height: 150px;    
+		}
 	</style>
 </head>
 <body style="padding-top:50px">
@@ -81,14 +92,14 @@
 		  <h1>丨 你 的 选 择 , 尽 在 凡 客 丨</h1>
 		  <p></p>
 	</div><hr>
-
+	
 	<!-- 尾部 -->
-	<footer class="footer ">
+	<!-- <footer class="footer ">
 	  <div class="container">
 	    <div class="row footer-top">
 	      <div class="col-sm-6 col-lg-6">
 	        <h4>
-	          <!-- <img src="http://static.bootcss.com/www/assets/img/logo.png"> -->
+	          <img src="http://static.bootcss.com/www/assets/img/logo.png">
 	        </h4>
 	        <p>本网站所列开源项目的中文版文档全部由<a href="http://www.bootcss.com/">Bootstrap中文网</a>成员翻译整理，并全部遵循 <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>协议发布。</p>
 	      </div>
@@ -134,8 +145,91 @@
 	      </ul>
 	    </div>
 	  </div>
-	</footer>
-	<script type="text/javascript">
+	</footer> -->
+	<div class="container" style="width:90%">
+		<div id="footer" class="row" style="center">
+
+		   <div id="rcorners3" class="col-sm-6 col-md-3">
+		   		
+		      <div class="row clearfix">
+		      	@foreach($links as $k=>$v)
+		         <div class="col-md-12 column">{{!!$v->name!!}}
+		         	<a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div> 
+		         </div>
+		          @endforeach
+		         <div class="col-md-12 column">
+		         	 <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
+		         </div>
+		      </div>
+		     
+		      
+		   </div>
+		   <div id="rcorners3" class="col-sm-6 col-md-3">
+		      <div class="row clearfix">
+		         <div class="col-md-12 column">
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
+		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		         </div>
+		         <div class="col-md-12 column">
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
+		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		         </div>
+		      </div>
+		      
+		   </div>
+		   <div id="rcorners3" class="col-sm-6 col-md-3">
+		      <div class="row clearfix">
+		         <div class="col-md-12 column">
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
+		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		         </div>
+		         <div class="col-md-12 column">
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
+		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		         </div>
+		      </div>
+		      
+		   </div>
+		   <div id="rcorners3" class="col-sm-6 col-md-3">
+		      <div class="row clearfix">
+		         <div class="col-md-12 column">
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
+		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		         </div>
+		         <div class="col-md-12 column">
+		            <div width="60"><a href="#">orderbylimit8网站名linkname网站地址linkurl</a></div>
+		            <a href="#" class="thumbnail">网站地址linkurl网站图片linkpic
+		               <img src="/wp-content/uploads/2014/06/kittens.jpg" alt="通用的占位符缩略图">
+		            </a>
+		         </div>
+		      </div>
+	      
+	   </div>
+	</div>
+	<!-- 尾部 -->
+
+	<script src="/admins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/admins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/admins/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="/admins/dist/js/sb-admin-2.js"></script>
+    <script src="/admins/layer/layer.js"></script>
+    <script type="text/javascript">
 		$('.fenlei1').hover(function(){
 			$(this).siblings().css({display:'block'});
 		},function(){
@@ -147,5 +241,8 @@
 			$(this).css({display:'none'});
 		})
 	</script>
+   
+
+	
 </body>
 </html>

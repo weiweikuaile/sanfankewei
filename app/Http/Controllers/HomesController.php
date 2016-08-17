@@ -41,5 +41,51 @@ class HomesController extends Controller
   		return $arr;
   	}
 
+    
+      
+    
+    /*
+    * 前台友情链接列表
+    */
+    public function getHomeindex()
+    {
+      //$keywords与orderBy冲突;
+      /************************
+      $keywords=$request->keywords;
+      dd(Links::orderBy('order','asc')->get());
+      if(!empty($keywords)){
+        $data = Links::orderBy('order','asc')->where('name','like','%'.$request->input("keywords").'%')->paginate($num);
+      }else{
+        $data = Links::orderBy('order','asc')->paginate($num);
+      }
+      或者用
+      if($keywords){
+        $data=Links::where('name','like','%'.$request->input("keywords").'%')->orderBy('order','asc')->paginate($num);
+      }else{
+        $data=Links::orderBy('order','asc')->paginate($num);
+      }
+      
+      **************************
+      */
+      /*
+       $num = $request->input('num',5);
+      $data = Links::orderBy('order','asc')
+            ->where(function($query) use($request){
+                //判断是否有where条件
+                if($request->input('keywords')){
+                    $query->where('name','like','%'.$request->input('keywords').'%');
+                }
+            })->paginate($num);
+     */
+      //$links = Links::orderBy('order','asc')->get();
+      //dd($links);
+      $links = DB::table('links')->get();
+      //$data = Links::orderBy('order','asc')->paginate($num);
+     //return view('admin.links.index',compact('data','request'));
+       //return view('admin.links.index',['data'=>$data,'request'=>$request]);
+       return view('layout.homeindex',['links'=>$links,'request'=>$request]);
+    }
+
+
 
 }

@@ -14,6 +14,7 @@
     <link href="/admins/dist/css/sb-admin-2.css" rel="stylesheet">
     <link href="/admins/bower_components/morrisjs/morris.css" rel="stylesheet">
     <link href="/admins/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
     <div id="wrapper">
@@ -132,7 +133,19 @@
                             </ul>
                         </li>
                         <!-- 订单管理 -->
-
+                        <!-- 友情链接管理 -->
+                        <li>
+                            <a href="index.html"><i class="fa fa-link"></i>友情链接管理</a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{url('/admin/links')}}">友情链接列表</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('/admin/links/add')}}">友情链接添加</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 友情链接管理 -->
                     </ul>
                 </div>
             </div>
@@ -188,6 +201,7 @@
     <script src="/admins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/admins/bower_components/metisMenu/dist/metisMenu.min.js"></script>
     <script src="/admins/dist/js/sb-admin-2.js"></script>
+    <script src="/admins/layer/layer.js"></script>
     @section('ajax')
     @show
 </body>

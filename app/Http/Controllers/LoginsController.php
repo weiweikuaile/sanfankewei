@@ -25,13 +25,13 @@ class LoginsController extends Controller
     {
         // dd($request->input('username'));
         $user = DB::table('user')
-            ->where('username',$request->input('username'))
+            ->where('email',$request->input('email'))
             ->first();
         if(!empty($user)){
             //检测密码是否一致
             if(Hash::check($request->input('password'),$user->password)){
                 //登录成功
-                session(['id'=>$user->id,'username'=>$user->username]);
+                session(['id'=>$user->id,'email'=>$user->username]);
                 //跳转页面
                 return redirect('/admin')->with('success','欢迎'.$user->username);
             }else{

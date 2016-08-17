@@ -28,7 +28,7 @@
                         <form role="form" action="{{url("/admin/logins/dologin")}}" method="post">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="用户名" name="username" type="text" autofocus>
+                                    <input class="form-control" placeholder="用户名" name="email" type="text" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="密码" name="password" type="password">
